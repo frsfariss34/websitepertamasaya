@@ -1,0 +1,262 @@
+css
+/* RESET & DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER & NAV */
+header {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #e94560;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e94560;
+}
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(135deg, #0f3460, #16213e, #1a1a2e);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+.hero-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #e94560;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+/* TOMBOL */
+.btn-primary {
+    background: linear-gradient(135deg, #e94560, #c23152);
+    color: #fff;
+    border: none;
+    padding: 14px 35px;
+    font-size: 1.05rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(233, 69, 96, 0.4);
+}
+
+.hasil-salam {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #00d2ff;
+    min-height: 30px;
+}
+
+/* SECTION UMUM */
+section {
+    padding: 70px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: 40px;
+    color: #1a1a2e;
+}
+
+/* TENTANG - CARDS */
+.tentang {
+    background: #f8f9fa;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #1a1a2e;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* SKILL BARS */
+.skill {
+    background: #fff;
+}
+
+.skill-bars {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    margin-bottom: 22px;
+}
+
+.skill-item span {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.bar {
+    background: #e0e0e0;
+    border-radius: 50px;
+    overflow: hidden;
+    height: 28px;
+}
+
+.bar-fill {
+    background: linear-gradient(135deg, #e94560, #0f3460);
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 12px;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: width 1.5s ease;
+}
+
+/* KONTAK */
+.kontak {
+    background: #f8f9fa;
+}
+
+#form-kontak {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+#form-kontak input,
+#form-kontak textarea {
+    padding: 13px 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+#form-kontak input:focus,
+#form-kontak textarea:focus {
+    outline: none;
+    border-color: #e94560;
+}
+
+.form-status {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* FOOTER */
+footer {
+    background: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+}

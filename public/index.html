@@ -1,0 +1,102 @@
+html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pertamaku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo">🚀 WebKu</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Halo! Saya <span class="highlight">Developer Baru</span> 👋</h1>
+            <p>Ini adalah website pertama saya yang dibuat dengan Node.js 
+               dan di-deploy ke Vercel!</p>
+            <button id="btn-salam" class="btn-primary">Klik untuk Salam! 🎉</button>
+            <p id="hasil-salam" class="hasil-salam"></p>
+        </div>
+    </section>
+
+    <!-- TENTANG SECTION -->
+    <section id="tentang" class="tentang">
+        <h2>📖 Tentang Saya</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-icon">🎓</div>
+                <h3>Pelajar</h3>
+                <p>Saya sedang belajar web development dan ini adalah 
+                   project pertama saya!</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💻</div>
+                <h3>Coding</h3>
+                <p>Saya belajar HTML, CSS, JavaScript, dan Node.js 
+                   untuk membuat website.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🚀</div>
+                <h3>Semangat</h3>
+                <p>Saya terus belajar hal baru setiap hari untuk menjadi 
+                   developer yang handal!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILL SECTION -->
+    <section id="skill" class="skill">
+        <h2>🛠️ Skill Saya</h2>
+        <div class="skill-bars">
+            <div class="skill-item">
+                <span>HTML</span>
+                <div class="bar"><div class="bar-fill" style="width: 80%">80%</div></div>
+            </div>
+            <div class="skill-item">
+                <span>CSS</span>
+                <div class="bar"><div class="bar-fill" style="width: 65%">65%</div></div>
+            </div>
+            <div class="skill-item">
+                <span>JavaScript</span>
+                <div class="bar"><div class="bar-fill" style="width: 50%">50%</div></div>
+            </div>
+            <div class="skill-item">
+                <span>Node.js</span>
+                <div class="bar"><div class="bar-fill" style="width: 40%">40%</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK SECTION -->
+    <section id="kontak" class="kontak">
+        <h2>📬 Hubungi Saya</h2>
+        <form id="form-kontak">
+            <input type="text" placeholder="Nama kamu" required>
+            <input type="email" placeholder="Email kamu" required>
+            <textarea placeholder="Tulis pesan..." rows="4" required></textarea>
+            <button type="submit" class="btn-primary">Kirim Pesan ✉️</button>
+        </form>
+        <p id="form-status" class="form-status"></p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 WebKu - Dibuat dengan ❤️ menggunakan Node.js & Vercel</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
